@@ -81,10 +81,7 @@ workflows:
           branches:
             only: 
               - main
-      - Hold-for-Approval:
-          type: approval
-          requires:
-            - build
+     
       - deploy:
           requires:
             - Hold-for-Approval
