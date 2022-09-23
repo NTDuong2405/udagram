@@ -80,8 +80,7 @@ workflows:
         filters: 
           branches:
             only: 
-              - main
-     
+              - main     
       - deploy:
           requires:
-            - Hold-for-Approval
+            - build
